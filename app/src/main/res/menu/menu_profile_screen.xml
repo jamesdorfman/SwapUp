@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jamesdorfman.skillexchange.ProfileScreen">
+    <item
+        android:id="@+id/about_screen_button"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="About"
+        />
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="2" app:showAsAction="never" />
+    <item
+        android:id="@+id/action_log_out"
+        android:orderInCategory="3"
+        android:showAsAction="never"
+        android:title="Log out"/>
+</menu>

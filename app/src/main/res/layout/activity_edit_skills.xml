@@ -1,0 +1,57 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout  android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.jamesdorfman.skillexchange.EditSkills"
+    android:id="@+id/editToTeachLinearLayout">
+
+    <SearchView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint=""
+        android:id="@+id/teachSkillToAddEditText"
+        android:queryBackground="@android:color/transparent"
+        />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_marginBottom="40dp"
+            android:onClick="addSkill"
+            android:background="@color/skill_add_color"
+            android:textColor="@color/white"/>
+   <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_background"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Piano"
+            android:textSize="25dp"/>
+        android:background="@drawable/delete_icon"
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="DELETE"
+/>
+    </LinearLayout>-->
+        <org.apmem.tools.layouts.FlowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSkillsHolder">
+
+        </org.apmem.tools.layouts.FlowLayout>
+ </LinearLayout>
+</ScrollView>

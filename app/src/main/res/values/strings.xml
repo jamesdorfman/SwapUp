@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">Skill Exchange</string>
+
+    <item name="action_search" type="id" />
+    <string name="hint_search"> </string>
+    <string name="facebook_app_id">223961464667418</string>
+    <string name="fb_login_protocol_scheme">fb223961464667418</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <item name="loginButton" type="id" />
+    <item name="signUpButton" type="id" />
+
+    <item name="loginLinearLayout" type="id" />
+    <item name="loginEmailEditText" type="id" />
+    <item name="loginPasswordEditText" type="id" />
+    <item name="loginSubmitButton" type="id" />
+
+    <item name="signupUsernameEditText" type="id" />
+    <item name="singupPasswordEditText" type="id" />
+    <item name="signupReenterPasswordEditText" type="id" />
+    <item name="singupSubmitButton" type="id" />
+
+    <item name="drawer_layout" type="id" />
+    <item name="navList" type="id" />
+    <item name="profileNameTextView" type="id" />
+    <item name="profileAgeTextView" type="id" />
+    <item name="profileBioTextView" type="id" />
+    <item name="profileToTeachSkillsLinearLayout" type="id" />
+    <item name="profileToLearnSkillsLinearLayout" type="id" />
+    <item name="profileImageViewRelativeLayout" type="id" />
+    <item name="profileDefaultSkillBox" type="id" />
+    <item name="profilePicture" type="id" />
+    <item name="editProfilePictureBackground" type="id" />
+    <item name="pickImageButton" type="id" />
+    <item name="profilePictureUploadImageView" type="id" />
+    <item name="profilePictureHolder" type="id" />
+    <item name="frame" type="id" />
+    <item name="findPeopleLeftButton" type="id" />
+    <item name="findPeopleRightButton" type="id" />
+    <item name="itemText" type="id" />
+    <item name="itemSwipeLeftIndicator" type="id" />
+    <item name="itemSwipeRightIndicator" type="id" />
+    <item name="itemFrameLayoutBackground" type="id" />
+    <item name="itemCardImage" type="id" />
+    <item name="imageUrlTextView" type="id" />
+    <item name="itemBookText" type="id" />
+    <item name="distanceView" type="id" />
+    <item name="actionbar_textview" type="id" />
+    <item name="zoomProfilePic" type="id" />
+    <item name="viewMoreButton" type="id" />
+    <item name="swipeCardsBackground" type="id" />
+
+    <item name="editToTeachButton" type="id" />
+    <item name="editToLearnButton" type="id" />
+
+    <item name="teachSkillToAddEditText" type="id" />
+    <item name="editToTeachLinearLayout" type="id" />
+
+    <item name="editSkillsHolder" type="id" />
+
+    <item name="add_skill_button" type="id" />
+    <item name="cancel_button" type="id" />
+
+    <item name="editBioEditText" type="id" />
+
+    <item name="skillTeachDynamicLinearLayout" type="id" />
+    <item name="skillLearnDynamicLinearLayout" type="id" />
+
+    <item name="yesMatchButton" type="id" />
+    <item name="noMatchButton" type="id" />
+
+    <item name="matchesPreviewLinearLayout" type="id" />
+
+    <item name="asdf" type="id" />
+
+    <item name="messages_list" type="id" />
+    <item name="new_message" type="id" />
+    <item name="send_message" type="id" />
+    <item name="message_right" type="id" />
+    <item name="message_left" type="id" />
+    <item name="message_time" type="id" />
+
+    <item name="timestampInsert" type="id" />
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <item name="messageHolder" type="id" />
+    <item name="skillCardRelativeLayout" type="id" />
+    <item name="skillTeachTextView" type="id" />
+    <item name="skillLearnTextView" type="id" />
+    <item name="bioTitleTextView" type="id" />
+    <item name="chatTitleHeaderHolder" type="id" />
+
+    <item name="about_screen_button" type="id" />
+    <item name="siteLink" type="id" />
+    <item name="instaLink" type="id" />
+
+    <item name="locationSlider" type="id" />
+    <item name="locationText" type="id" />
+    <item name="maleButton" type="id" />
+    <item name="femaleButton" type="id" />
+    <item name="bothButton" type="id" />
+    <item name="saveButton" type="id" />
+    <item name="rootLayout" type="id" />
+
+    <item name="action_log_out" type="id" />
+    <color name="loginBackground">#80cccccc</color>
+    <string name="title_activity_log_in_screen">Log In</string>
+    <string name="title_activity_sign_in_screen">Sign Up</string>
+    <string name="title_activity_profile_screen">Profile</string>
+    <string name="title_activity_matches_screen">Matches</string>
+    <string name="title_activity_edit_skills">EditSkills</string>
+    <string name="title_activity_main_activity">SwapUp</string>
+
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="red">#FF0000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="navy">#000080</color>
+    <color name="black">#000000</color>
+
+    <color name="dark">#000</color>
+    <!-- Login and signups colors below here -->
+
+    <color name="skillBorderColor">#E12929</color>
+    <color name="primary">#E43F3F</color>
+    <color name="primary_dark">#E12929</color>
+    <color name="primary_darker">#CC1D1D</color>
+    <color name="accent">#FFFFFF</color>
+
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+
+    <color name="skill_add_color">#4d94ff</color>
+
+    <string name="title_activity_find_people_screen">Suggested People</string>
+    <string name="title_activity_edit_bio">EditBio</string>
+</resources>

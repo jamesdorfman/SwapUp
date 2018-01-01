@@ -1,0 +1,1 @@
+include ':app', ':layouts-1.10', ':firebase-client-android-2.5.2'

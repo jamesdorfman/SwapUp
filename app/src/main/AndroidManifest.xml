@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jamesdorfman.skillexchange">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".FirebaseClass"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name=".SkillSuggestionProvider"
+            android:authorities="ngvl.android.demosearch.citysuggestion"
+            android:enabled="true"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AccountScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".LogInScreen"
+            android:label="LogInScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".SignupScreen"
+            android:label=".SignupScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".ProfileScreen"
+            android:label="@string/title_activity_profile_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".EditSkills"
+            android:label="@string/title_activity_edit_skills"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ProfileScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <!-- Parent activity meta-data to support 4.0 and lower -->
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.jamesdorfman.SkillExchange.ProfileScreen" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@layout/searchable" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main_activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FindPeopleScreen"
+            android:label="@string/title_activity_find_people_screen"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <item
+                android:name="android:background"
+                android:screenOrientation="portrait">
+                @color/skillBorderColor
+            </item>
+        </activity>
+        <activity
+            android:name=".MatchesScreen"
+            android:label="@string/title_activity_matches_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".EditBio"
+            android:label="@string/title_activity_edit_bio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirebaseClass"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChatScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FindPeopleZoom"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".AboutScreen"
+            android:label="About"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".SettingsScreen" />
+    </application>
+
+</manifest>

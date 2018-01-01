@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.2'
+
+    defaultConfig {
+        applicationId "com.jamesdorfman.skillexchange"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 6;
+        versionName "1.0.1"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+        }
+        debug {
+            debuggable true
+        }
+    }
+
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+}
+
+repositories {
+    jcenter()
+    //mavenLocal()
+    mavenCentral()
+    // maven {                                  // <-- Add this
+    //     url 'https://maven.google.com/'
+    //     name 'Google'
+    //  }
+}
+
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.firebase:firebase-client-android:2.5.2+'
+    implementation 'org.apmem.tools:layouts:1.10@aar'
+    implementation 'com.android.support:design:27.0.2'
+    implementation 'com.mikhaellopez:circularimageview:3.0.2'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.mcxiaoke.volley:library-aar:1.0.0'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'org.apache.httpcomponents:httpcore:4.2.4'
+    implementation 'org.apache.httpcomponents:httpmime:4.3'
+    //compile 'com.facebook.android:facebook-android-sdk:4.8+'
+
+    implementation 'com.facebook.android:facebook-login:[4,5)'
+    compile 'com.squareup.okhttp3:okhttp:3.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.lorentzos.swipecards:library:1.0.9'
+    // Support Libraries
+    compile 'com.android.support:cardview-v7:27.0.2'
+    compile 'com.android.support:design:27.0.2'
+    compile 'com.android.support:gridlayout-v7:27.0.2'
+    compile 'com.android.support:leanback-v17:27.0.2'
+    compile 'com.android.support:mediarouter-v7:27.0.2'
+    compile 'com.android.support:palette-v7:27.0.2'
+    compile 'com.android.support:recyclerview-v7:27.0.2'
+    compile 'com.android.support:support-annotations:22.1.1'
+    compile 'com.android.support:support-v13:27.0.2'
+    compile 'com.android.support:support-v4:27.0.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+}
